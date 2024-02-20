@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: rails_graphql3_production
   username: rails_graphql3
   password: <%= ENV["RAILS_GRAPHQL3_DATABASE_PASSWORD"] %>
